@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body id="<%= pageID %>">
+    <div class="page-wrapper">
+      <header class="<%= headerClass %>">
+        <% include partials/template/header.ejs %>
+      </header>
+      <div class="content-area">
+        <section class="single-wrap">
+        <div class="outer-container">
+          <div class="inner-container">
+            <% simulations.forEach(function(item) { %>
+              <div class="sim-image-wrap">
+                <img src="/images/simulations/<%= item.shortname %>_full.jpg">
+              </div>
+              <div class="sim-inner">
+                <h3><%= item.title %></h3>
+                <p><%- item.description %></p>
+              </div>
+
+            <% }); %>
+          </div>
+        </div>
+        </section>
+      </div><!--#primary-->
+    <% include partials/template/prefooter.ejs %>
+    <% include partials/template/footer.ejs %>
+    </div><!--#page-->
+    <% include partials/template/scripts.ejs %>
+  </body>
+<html>

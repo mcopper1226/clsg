@@ -1,0 +1,23 @@
+<section id="simulationList" class="<% if (pageID == 'home') { %>simulation-slider<% } %>">
+  <div class="outer-container">
+    <div class="inner-container">
+      <% simulations.forEach(function(item) { %>
+
+
+      <a class="slide-item" href="/simulations/<%= item.shortname %>">
+        <div class="slide-image-wrap">
+          <img src="/images/simulations/<%= item.shortname %>_thumb.jpg">
+        </div>
+        <div class="slider-inner">
+          <h3><%= item.title %></h3>
+          <% if (pageID == 'home') { %>
+            <p><%= item.summary %></p>
+            <% } else { %>
+            <p><%- item.description %></p>
+          <% } %>
+        </div>
+      </a>
+      <% }); %>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <% include partials/template/head.ejs %>
+  </head>
+  <body id="<%= pageID %>">
+    <div class="page-wrapper">
+      <header class="<%= headerClass %>">
+        <% include partials/template/header.ejs %>
+      </header>
+      <div class="content-area">
+        <section class="home-intro npb">
+          <div class="outer-container">
+            <div class="inner-container-f">
+              <div class="content content-text">
+                <h1>Our Mission</h1>
+                <p>The Center for Leadership Simulation and Gaming at the Frank Batten School of Leadership and Public Policy designs, develops and implements cutting edge simulations and experiments to advance education in leadership and public policy.</p>
+              </div>
+              <div class="content content-image-wrapper">
+                <img src="/images/main/home-1.jpg"/>
+              </div>
+            </div>
+          </div>
+        </section>
+        <% include partials/content/simulationsslider.ejs %>
+        <section class="cta">
+          <div class="outer-container">
+            <div class="inner-container center">
+            <h4>Interested in Simulations</h4>
+            <h2>Contact us to learn more</h2>
+            <a class="pill-btn-lg" href="http://batten.virginia.edu/research/centers/center-leadership-simulation-and-gaming" target="_blank">Learn More</a>
+          </div>
+          </div>
+        </section>
+      </div><!--#primary-->
+      <% include partials/template/prefooter.ejs %>
+    <% include partials/template/footer.ejs %>
+    </div><!--#page-->
+    <% include partials/template/scripts.ejs %>
+  </body>
+<html>

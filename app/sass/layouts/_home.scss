@@ -1,0 +1,109 @@
+.home-intro {
+  .inner-container-f > * {
+    flex: 0 0 100%;
+  }
+  .content-text {
+    order: 2;
+  }
+  .content-image-wrapper {
+    order: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.simulation-slider {
+  background: lighten($aqua, 8%);
+  padding: 4rem 0;
+  .outer-container {
+    width: 100%;
+    padding: 4rem 4vw;
+    .inner-container {
+      display: flex;
+    }
+  }
+  .slide-item {
+    margin: 0 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform .25s ease-in-out;
+    will-change: transform;
+    &:hover {
+      transform: scale(1.01);
+    }
+    h3 {
+      color: $navy; 
+    }
+  }
+  .slide-image-wrap {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .slider-inner {
+    padding: 10px;
+    padding-bottom: 20px;
+  }
+  .tns-outer {
+    position: relative;
+  }
+  .tns-nav {
+    display: none;
+  }
+  .tns-controls {
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    button {
+      background: $orange;
+      border: none;
+      margin-right: 2px;
+      font-size: 0;
+      line-height: 0;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      outline: none;
+      transition: background-color .2s ease-in-out;
+      &:hover {
+        background-color: darken($orange, 10%);
+      }
+    }
+    button:first-of-type {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        background-image: url('/images/svg/caret.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(180deg);
+      }
+    }
+    button:nth-of-type(2) {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        bottom: 8px;
+        left: 8px;
+        right: 8px;
+        background-image: url('/images/svg/caret.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+      }
+    }
+  }
+}
+
+.cta {
+  padding: 4rem 0;
+}

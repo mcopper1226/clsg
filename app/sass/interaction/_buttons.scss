@@ -1,0 +1,18 @@
+a.pill-btn-lg {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  border-radius: 30px;
+  padding: 0 30px;
+  background-color: $orange;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: .3rem;
+  transform: translateY(0);
+  transition: transform .3s ease-in-out;
+  &:hover {
+    transform: translateY(-2px); 
+  }
+}

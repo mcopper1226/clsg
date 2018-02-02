@@ -1,0 +1,14 @@
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	border: 0;
+	outline: none;
+	display: block;
+}
+
+.aspect {
+  width: 100%;
+  z-index: -10;
+  position: relative;
+  opacity: 0;
+}

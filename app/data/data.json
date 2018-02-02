@@ -1,0 +1,33 @@
+{
+  "simulations": [{
+    "title" : "The Global Food Security Game",
+    "category": "food",
+    "shortname" : "global_food_security",
+    "summary" : "Players are tasked with improving food security in their designated region.",
+    "description": "<p>The simulation consists of 30 indicators or data points that give a picture of food security in a specific country and region. Players are tasked with improving food security in their region, and working toward the U.N. Sustainable Goal of a hunger-free world by 2030. Students have the opportunity to make important funding and programming decisions as they work together to improve food security.</p>"
+  },{
+    "title" : "The UVA Bay Game",
+    "category": "environment",
+    "shortname" : "uva_bay_game",
+    "summary" : "Players make decisions on the health of Bay, balancing environmental and economic sustainabilty.",
+    "description": "<p>CLSG’s oldest game, the UVA Bay Game®, has been played more than 200 times by diverse audiences ranging from high schools to the U.S. House of Representatives, GE Water & Power to NOAA and the EPA. This online, multiplayer, game shoulders on participants the responsibilities of real-world stakeholders who live in and make a living on the Chesapeake Bay Watershed, including Crop Farmers, Land Developers, Watermen and state-level policymakers. Players learn the impacts of their decisions on the health of Bay and work together to balance both environmental and economic sustainability.</p>"
+  },{
+    "title" : "The Louisiana Coastal Resilience Game",
+    "category": "environment",
+    "shortname" : "la_coastal_resilience",
+    "summary" : "What does the future hold for culture, industry, and ecology along the coast of Louisiana?",
+    "description": "<p>What does the future hold for culture, industry, and ecology along the coast of Louisiana? What can be done about it? The Louisiana Coastal Resilience Game allows federal, state, and local regulators, as well as corporations and NGOs, to implement protective and restorative efforts of varying costs and estimated degrees of impact along Louisiana’s coastline and observe potential future outcomes under different policy and weather scenarios. Actions available to players are well-grounded, derived from research done by McKinsey & Co. and from the Louisiana Coastal Protection and Restoration Authority’s ‘State Master Plan’.</p>"
+  },{
+    "title" : "Poverty Simulation",
+    "category": "poverty",
+    "shortname" : "poverty_simulation",
+    "summary" : "Can you survive a month in poverty?",
+    "description": "<p>Can you survive a month in poverty? Poverty Sim participants take on the roles of members of impoverished families or staffers at community agencies and resources that support low-income families. The objective is to sensitize us to the day-to-day realities of life faced by people with low incomes in the US and abroad and to motivate us to become involved in activities which help to mitigate poverty here and globally. Your goals may include keeping your home secure, providing food and clothing for your family, making your utility and loan payments on time, or helping your children through school, all while responding to unexpected and sometimes unfortunate events.</p>"
+  },{
+    "title" : "Pensions Simulation",
+    "category": "domestic",
+    "shortname" : "pensions_simulation",
+    "summary" : "Students  vary a number of important parameters, like retirement age and payouts, and see their putative effects on important macro-economic variables.",
+    "description": "<p>The pensions simulation in PPOL7010 and PLCP3120 tries to show students that there is no single technocratic answer to whether pensions should be expanded or cut back. Rather, most choices around pensions are about moral preferences or decisions about who should work and how much. Students can vary a number of important parameters (retirement age, payouts, tax levels) and see their putative effects on important macro-economic variables. This opens up a discussion about the basis for the choice of parameters and also the underlying assumptions behind the model.  Additionally, starting conditions for the sim are based on real world countries, illustrating variations in the challenges facing different countries.</p>"
+  }]
+}

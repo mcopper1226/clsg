@@ -1,0 +1,25 @@
+{
+  "name": "clsg",
+  "version": "1.0.0",
+  "description": "This is the repository for the demo website I have prepared, which can be found [here](http://clsgdemo.com).",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon app/app.js"
+  },
+  "author": "Megan Copper",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "node-sass-middleware": "^0.11.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

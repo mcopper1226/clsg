@@ -1,0 +1,94 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 10) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+	clear: both;
+}
+
+
+@mixin button ($height, $padding, $background-color, $color, $transition) {
+  display: inline-block;
+  height: $height;
+  line-height: $height;
+  padding: 0 $padding;
+  background: $background-color;
+	text-decoration: none;
+  color: $color;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  @include font-size(1.4);
+  transition: $transition .25s ease-in-out;
+}
+
+@mixin heroImage($position) {
+	background-position: $position;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin backImage($image, $position) {
+	background-position: $position;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url($image);
+}
+
+@mixin absFlex {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-grid($sm:null, $med:null, $lg:null, $xl:null, $pad:0) {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-left: -$pad;
+  margin-right: -$pad;
+  list-style: none;
+
+  & > * {
+    padding:$pad;
+    flex-basis: 100%/$sm;
+    max-width: 100%/$sm;
+
+    @media(min-width: $mq-med){
+      flex-basis: 100%/$med;
+      max-width: 100%/$med;
+    }
+
+    @if $lg {
+      @media(min-width: $mq-large){
+        flex-basis: 100%/$lg;
+        max-width: 100%/$lg;
+      }
+    }
+
+    @if $xl {
+      @media(min-width: $mq-xlarge){
+        flex-basis: 100%/$xl;
+        max-width: 100%/$xl;
+      }
+    }
+  }
+}

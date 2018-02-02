@@ -1,0 +1,19 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a.link {
+	display: inline-block;
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+}
+
+a.inline {
+	text-transform: none;
+	color: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	letter-spacing: inherit;
+}
